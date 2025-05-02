@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ver um Pato?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: #eef7f9;
+    }
+    button {
+      font-size: 16px;
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #resposta {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+    #pato {
+      font-size: 100px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Você quer ver um pato?</h1>
+  <button onclick="mostrarSim()">Sim</button>
+  <button onclick="mostrarNao()">Não</button>
+
+  <div id="resposta"></div>
+  <div id="pato"></div>
+
+  <script>
+    function mostrarSim() {
+      document.getElementById("resposta").innerHTML = "";
+      document.getElementById("pato").innerHTML = "🦆";
+    }
+
+    function mostrarNao() {
+      document.getElementById("resposta").innerHTML = "Tudo bem, eu não sou pa tu.";
+      document.getElementById("pato").innerHTML = "";
+    }
+  </script>
+</body>
+</html>
