@@ -1,0 +1,26 @@
+Nome da tabela = test_client
+Nome das colunas = test_users, test_address, test_mails
+Para o nome dos campos utilize o que achar mais apropriado
+
+1- Crie uma consulta SQL para selecionar todos os usuários cujo endereço contenha "São Paulo".
+
+	SELECT test_users FROM test_client WHERE test_address = 'São Paulo';
+
+
+2- Crie uma consulta SQL para atualizar o e-mail de um usuário específico.
+
+	UPDATE test_client SET test_mails = 'email@email.com' WHERE test_users ='teste';
+
+3- Crie uma consulta SQL para excluir todos os usuários que não têm endereço definido  e que contenham mais de 75 anos.
+	
+	Para esse teria que ter a idade na tabela, suponha que a idade esteja na coluna "age_client'
+	
+	DELETE FROM test_client WHERE test_address is NULL AND age_client > 75;
+
+4-Calcular a média de idade dos usuários que moram em "Belo Horizonte"
+	
+	Para esse teria que ter a idade na tabela, suponha que a idade esteja na coluna "age_client'
+	
+	SELECT avg(age_client) FROM test_client WHERE test_address = 'Belo Horizonte';
+	
+
